@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="UAP_PSD.MasterPage.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="../Views/AdminHomePage.aspx">Home</a>
+                    </li>
+                    <li>
+                        <a href="../Views/ManageSupplementPage.aspx">Manage Supplement</a>
+                    </li>
+                    <li>
+                        <a href="../Views/OrderQueuePage.aspx">Order Queue</a>
+                    </li>
+                    <li>
+                        <a href="../Views/AdminProfilePage.aspx">Profile</a>
+                    </li>
+                    <li>
+                        <a href="../Views/TransactionReportPage.aspx">Transaction Report</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="AdminPage" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

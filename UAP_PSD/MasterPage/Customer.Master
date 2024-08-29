@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.master.cs" Inherits="UAP_PSD.MasterPage.Customer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="../Views/OrderSupplementPage.aspx">Order Supplement</a>
+                    </li>
+                    <li>
+                        <a href="../Views/CustomerHistoryPage.aspx">History</a>
+                    </li>
+                    <li>
+                        <a href="../Views/CustomerProfilePage.aspx">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="CustomerPage" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
